@@ -4,31 +4,142 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tarefa 12</title>
+    <style>
+    h1 {
+        font-size: 28px;
+        color: #0a4275;
+        margin-bottom: 10px;
+        border-bottom: 2px solid #0a4275;
+        padding-bottom: 5px;
+    }
+
+    /* Subtítulos */
+    h2 {
+        font-size: 22px;
+        color: #1c1c1c;
+        margin-top: 30px;
+    }
+
+    /* Títulos menores */
+    h3 {
+        font-size: 18px;
+        color: #333;
+        margin-top: 20px;
+    }
+
+    /* Listas */
+    ul {
+        margin-left: 20px;
+        list-style-type: disc;
+    }
+
+    /* Códigos ou diretórios */
+    code {
+        background-color: #e4e4e4;
+        padding: 2px 5px;
+        border-radius: 4px;
+        font-family: monospace;
+    }
+
+    /* Imagens */
+    img {
+        max-width: 100%;
+        height: auto;
+        border: 1px solid #ccc;
+        margin: 20px 0;
+        box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
+    }
+    </style>
 </head>
 <body>
-    <h1>ATIVIDADES TEÓRICAS COM FOCO EM WINDOWS E LINUX E SEGURANÇA CIBERNÉTICA – TODA EXPLICAÇÕES DE FORMA PRÁTICA E GRÁFICA</h1>
-    <h2>(1)Definindo os Paradigmas: Código Aberto vs. Fechado</h2>
-    <p>Um sistema operacional de código aberto, é aquele que pode ser adquirido, editado e personalizado
-        de forma à desejar do usuário, e o sistema operacional de código fechado e aquele que é fornecido
-        por uma empresa, não sendo possível adquirir de forma gratuita e nem edita-lo.
-    </p>
-    <h3>Vantagens e Desvantagens</h3>
-    <p>Um sistema operacional de codigo aberto, tem as seguintes Vantagens:
-        -É totalmente gratuito;
-        -É normalmente mais leve que um sistema operacional de codigo fechado;
-        E as seguintes Desvantagens:
-        -É menos seguro;
-        -Tem uma interface não amigavel;
-    </p>
-    <h3>Exemplos</h3>
-    <p>Exemplos de Sistema Operacional de Código Aberto:
-        -Ubuntu;
-        -Fedora;
-        -Tails;
-        Exemplos de Sistema Operacional de Código Fechado:
-        -Windows 10;
-        -Windows 11;
-        -macOS 15;
-    </p>
+<h1>ATIVIDADES TEÓRICAS COM FOCO EM WINDOWS E LINUX E SEGURANÇA CIBERNÉTICA – TODA EXPLICAÇÕES DE FORMA PRÁTICA E GRÁFICA</h1>
+
+<h2>(1) Definindo os Paradigmas: Código Aberto vs. Fechado</h2>
+<p>Um sistema operacional de código aberto é aquele que pode ser adquirido, editado e personalizado conforme o desejo do usuário. Já o sistema operacional de código fechado é fornecido por uma empresa, geralmente pago e sem possibilidade de edição do código.</p>
+
+<h3>Vantagens e Desvantagens</h3>
+<p><strong>Código Aberto</strong><br>
+Vantagens:
+<ul>
+    <li>Gratuito</li>
+    <li>Mais leve</li>
+</ul>
+Desvantagens:
+<ul>
+    <li>Menos seguro</li>
+    <li>Interface menos amigável</li>
+</ul>
+</p>
+<p><strong>Código Fechado</strong><br>
+Vantagens:
+<ul>
+    <li>Maior suporte e segurança</li>
+    <li>Interface amigável</li>
+</ul>
+Desvantagens:
+<ul>
+    <li>Geralmente pago</li>
+    <li>Pouca ou nenhuma personalização</li>
+</ul>
+</p>
+
+<h3>Exemplos</h3>
+<p><strong>Código Aberto:</strong> Ubuntu, Fedora, Tails<br>
+<strong>Código Fechado:</strong> Windows 10, Windows 11, macOS 15</p>
+
+<h2>(2) Análise Comparativa de Instalação</h2>
+<p>Durante a instalação, sistemas de código aberto como o Ubuntu oferecem mais opções de personalização, como o tipo de ambiente gráfico e a instalação de softwares adicionais. Já sistemas de código fechado como o Windows têm uma instalação mais guiada e simplificada, porém exigem a ativação por meio de licença paga. Em relação aos drivers, o Windows possui ampla compatibilidade automática, enquanto no Linux pode ser necessário instalar alguns manualmente.</p>
+
+<h2>(3) Debate: Modo Texto vs. Interface Gráfica</h2>
+<p>O modo texto (linha de comando) permite maior controle, automação e consumo reduzido de recursos. É ideal para servidores e usuários avançados. Já a interface gráfica (GUI) é intuitiva e amigável, indicada para tarefas cotidianas e novos usuários. Enquanto a GUI favorece a usabilidade, o modo texto é mais poderoso para operações complexas e manutenção de sistemas.</p>
+
+<h2>(4) Estruturas de Diretórios: Uma Análise Comparativa</h2>
+<p><strong>Windows:</strong>
+<ul>
+    <li><code>C:\Windows</code> – Arquivos do sistema</li>
+    <li><code>C:\Program Files</code> – Aplicativos instalados</li>
+    <li><code>C:\Users</code> – Arquivos e configurações de usuários</li>
+</ul>
+<strong>Linux:</strong>
+<ul>
+    <li><code>/bin</code> – Programas essenciais</li>
+    <li><code>/etc</code> – Arquivos de configuração</li>
+    <li><code>/home</code> – Pastas dos usuários</li>
+</ul>
+Ambos os sistemas organizam arquivos de maneira lógica, mas o Linux tende a ser mais modular e voltado à administração por múltiplos usuários.</p>
+
+<h2>(5) Modelos de Usuários e Permissões</h2>
+<p>No Windows (NTFS), as permissões são atribuídas por meio de uma interface gráfica, com opções de controle total, leitura e gravação. No Linux, as permissões são representadas pelo sistema rwx (leitura, escrita, execução), com diferentes níveis para dono, grupo e outros. O Linux oferece maior granularidade e controle via terminal, sendo ideal para ambientes multiusuário.</p>
+
+<h2>(6) O Processo de Boot: Do Power-On ao Desktop</h2>
+<p>O processo de boot começa com o BIOS/UEFI, que verifica o hardware e procura o gerenciador de boot. No Linux, o GRUB é carregado, permitindo escolher entre sistemas. Em seguida, o kernel é iniciado, carregando módulos e processos essenciais até a interface gráfica. No Windows, o carregador de boot inicia o kernel, drivers e serviços antes de exibir a área de trabalho. A principal diferença está na abertura e personalização do processo em sistemas Linux.</p>
+<h2>(7) Redes: Compartilhamento, Mapeamento</h2>
+<p><strong>a)</strong> Unidades e pastas em rede são recursos de armazenamento compartilhados em uma rede, permitindo o acesso remoto a arquivos e dados entre computadores. Servem para facilitar o trabalho colaborativo e centralizar informações.<br>
+<strong>b)</strong> Compartilhamento é tornar arquivos ou pastas acessíveis a outros usuários na rede. Acesso é a permissão dada para visualizar, modificar ou executar esses arquivos compartilhados.<br>
+<strong>c)</strong> Mapeamento de unidades de rede é o processo de atribuir uma letra de unidade (ex: Z:) a uma pasta de rede, tornando-a acessível como se fosse uma pasta local no computador do usuário.</p>
+<p>Exemplo:</p>
+<img src="Pratica da atividade 1 SOP- 2 Bim/pasta compartilhada - tarefa 7 teorica.png">
+
+<h2>(8) Fundamentos de Segurança Cibernética</h2>
+<p><strong>a)</strong> Segurança Cibernética é o conjunto de práticas, tecnologias e processos usados para proteger sistemas, redes e dados contra ataques, danos ou acessos não autorizados.<br>
+<strong>b)</strong> 1. Vírus – Programas que infectam arquivos e se replicam.<br>
+2. Ransomware – Sequestra dados e exige resgate.<br>
+3. Phishing – Tentativa de enganar usuários para obter dados sensíveis.<br>
+4. Spyware – Espiona atividades do usuário.<br>
+5. Ataques DDoS – Sobrecarga de servidores para tirar serviços do ar.<br>
+<strong>c)</strong> Vulnerabilidades são falhas ou brechas em sistemas que podem ser exploradas por atacantes para comprometer a segurança.<br>
+<strong>d)</strong> Credenciais são os dados de autenticação de um usuário (como login e senha). Protegê-las é essencial para evitar acessos indevidos a contas e sistemas.<br>
+<strong>e)</strong> Engenharia Social é o uso de manipulação psicológica para obter informações confidenciais. Exemplos: fingir ser um técnico de suporte para obter senhas, ou enviar e-mails falsos para roubar dados.</p>
+
+<h2>(9) Métodos de Proteção e Prevenção</h2>
+<p>Para aumentar a segurança de sistemas e dados, usuários e administradores devem adotar medidas como: uso de senhas fortes, autenticação em dois fatores, backups regulares, atualização constante de softwares, e antivírus. Um firewall nativo do sistema monitora e controla o tráfego de rede, bloqueando conexões suspeitas e ajudando a prevenir invasões.</p>
+
+<h2>(10) Configuração do Sistema: Pontos Críticos</h2>
+<p>Áreas críticas de configuração incluem:<br>
+1. Gerenciamento de usuários e permissões – Controle de quem pode acessar e modificar arquivos.<br>
+2. Atualizações automáticas – Garantir que o sistema esteja sempre protegido contra falhas e ameaças.<br>
+3. Configuração de firewall e segurança de rede – Proteção contra acessos não autorizados.<br>
+4. Programas de inicialização – Otimização do desempenho ao controlar o que é carregado no boot.<br>
+5. Gerenciamento de energia e desempenho – Ajuste de uso de recursos conforme a necessidade.</p>
 </body>
 </html>
